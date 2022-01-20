@@ -1,0 +1,92 @@
+.question {
+  background: $default;
+  padding: 70px 20px;
+  &__content {
+    background: $white;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  &__title {
+    @include large-text($dark);
+    padding-bottom: 20px;
+  }
+  &__holder {
+    padding-left: 30px;
+  }
+  &__area {
+    border: 1px solid $area;
+    width: 100%;
+    height: 65px;
+    padding: 8px;
+    color: $border-dark;
+    font-size: 14px;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #d6d6d6;
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0px;
+  }
+  &__btn {
+    @extend %list-button;
+    color: $white;
+    background-color: $blue;
+    border: 1px solid $blue;
+    font-size: 1rem;
+  }
+  &__sm-title {
+    font-size: 16px;
+    color: $light;
+  }
+  &__body {
+    border-top: 2px solid #ebebeb;
+  }
+  &__menu {
+    background: $btn-bg;
+    margin: 10px 0px;
+  }
+  &__iconImg {
+    height: 17px;
+    width: 15px;
+    object-fit: contain;
+  }
+  &__group {
+    justify-content: space-between;
+    align-items: center;
+    border-left: 3px solid $medium;
+    padding: 10px;
+  }
+  &__span {
+    @include large-text($red);
+  }
+  &__client {
+    @include md-text($dark);
+    border-left: 3px solid $red;
+    margin-bottom: initial;
+    padding: 10px;
+  }
+  &__ans {
+    @include md-text($medium);
+  }
+  &__spanAns {
+    @include large-text($medium);
+  }
+  &__thumb {
+    font-size: 12px;
+    font-weight: 400;
+    color: $light;
+    margin: 0px 5px;
+  }
+  &__more {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__morebtn {
+    @extend %common-button;
+    max-width: 135px;
+    padding: 0.5rem;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,97 @@
+.priceTags {
+  padding: 50px;
+  background: linear-gradient(0deg, #27262b 50%, #f1f3f6 0);
+  &__content {
+    background: url("https://static.priceoye.pk/images/product-price.jpg")
+      no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 30px 52px;
+  }
+  &__title {
+    @include large-text;
+    padding: 20px 0px 10px;
+    padding: 20px 0px 10px;
+  }
+  &__amount {
+    @include large-text;
+    padding: 20px 0px;
+  }
+  &__detail {
+    @include md-text;
+  }
+  &__amountSpan {
+    @include md-text;
+  }
+
+  &__rowBox {
+    width: 100%;
+    padding: 20px;
+  }
+  &__btn {
+    @extend %common-button;
+  }
+  &__rateNum {
+    width: 42px;
+    background: rgba(0, 199, 77, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__star {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
+
+  &__brand {
+    width: 100%;
+    max-width: 135px;
+    padding: 19px 4px;
+
+    margin: 0px 13px;
+    background: $blue;
+  }
+  &__box--extend {
+    margin-left: 40px;
+  }
+  &__rowBox--extend {
+    border-top: 1px solid #ddd;
+  }
+
+  &__value {
+    @include bold-text($dark);
+  }
+  &__boxBind {
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__box {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__deliveryIcon {
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+    font-weight: 400;
+    margin-right: 5px;
+  }
+  &__deliverTime {
+    margin-bottom: initial;
+    @include sm-text($light);
+    font-weight: 400;
+  }
+}
+.priceTags .col-md-7 {
+  padding-right: initial;
+  padding-left: initial;
+}
+.priceTags .col-md-5 {
+  padding-right: initial;
+  padding-left: initial;
+}
+.priceTags .row {
+  background: $white;
+}

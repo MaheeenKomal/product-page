@@ -1,0 +1,66 @@
+.specs {
+  background: $default;
+  padding: 50px;
+  &__title {
+    @include large-text($dark);
+  }
+  &__info {
+  }
+  &__group {
+    width: 100%;
+    max-width: 421px;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+  &__card {
+    background: $white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 17px;
+  }
+  &__table thead th {
+    border-bottom: initial;
+    border-top: initial;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: $tb-dark;
+  }
+}
+.specs .table td,
+.table th {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: $tb-dark;
+}
+
+.specs .table td {
+  color: $bright;
+  font-weight: 400;
+}
+.specs tbody th {
+  opacity: 0.7;
+  width: 150px;
+}
+.specs .table .specs__t1 {
+  color: $blue;
+}
+.specs .table .specs__t2 {
+  color: $yellow;
+}
+.specs .table .specs__t3 {
+  color: $green;
+}
+.specs .table .specs__t4 {
+  color: $violet;
+}
+.specs .table .specs__t5 {
+  color: $orange;
+}
+.specs .table .specs__t6 {
+  color: $red;
+}
+.specs .table .specs__t7 {
+  color: $blue;
+}

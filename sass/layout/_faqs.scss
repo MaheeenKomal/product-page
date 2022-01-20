@@ -1,0 +1,34 @@
+.faqs {
+  background: $black-back;
+  padding: 90px 20px 90px;
+
+  &__title {
+    @include large-text;
+    padding: 25px;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    width: 100%;
+    max-width: 327px;
+    margin: 20px;
+  }
+  &__img {
+    width: 100%;
+    max-width: 327px;
+    object-fit: contain;
+  }
+  &__cardTitle {
+    @include md-text;
+    padding: 54px 0px 29px;
+  }
+
+  &__cardDetail {
+    @include md-text($light);
+  }
+  &__group--last {
+    padding: 105px 0px 0px;
+  }
+}

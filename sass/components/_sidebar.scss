@@ -1,0 +1,116 @@
+.header .sidebar {
+  transform: translateX(-999%);
+  transition: 0.5s;
+  max-width: 300px;
+  position: fixed;
+  background-color: #79a8b5 !important;
+  top: 0;
+  border-top: 1px solid #ffff;
+  margin: -1px 0px 15px;
+  width: 100%;
+  max-width: 358px;
+  height: 100%;
+  z-index: 999999;
+
+  &__nav {
+    overflow-y: auto;
+    height: calc(100%);
+  }
+
+  &__bgImg {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+  }
+  &__child {
+    padding: 30px;
+    background: $white;
+  }
+  &__name {
+    color: $grey;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+  }
+  &__toggle {
+    padding: 10px 20px 10px 40px;
+    color: $bright;
+    margin-left: 5px;
+    font-size: 0.876em;
+  }
+  &__list-btn {
+    @extend %list-button;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+  &__content li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  &__content li a {
+    color: $bright;
+    font-weight: 400;
+  }
+}
+.header .sidebar.show {
+  transform: translateX(0);
+  left: 0;
+}
+
+.header .dropdown.show .dropdown-toggle::after {
+  content: "\f106";
+}
+
+.header .dropdown .dropdown-toggle::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  border-top: initial;
+  border-right: initial;
+  border-bottom: initial;
+  border-left: initial;
+  font-weight: 700;
+  font-size: 1.15rem;
+  position: absolute;
+  right: 32px;
+}
+.header .dropdown.show {
+  background: $grey-light;
+  border-radius: 8px;
+}
+.header .dropdown-menu {
+  border: initial;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 8px 8px;
+  background: rgba(116, 138, 152, 0.02);
+}
+.header .dropdown-menu .dropdown-item {
+  display: block;
+  color: $bright;
+  font-weight: 400;
+  padding: 5px 20px;
+  font-size: 0.876em;
+}
+.sidebar .barbox {
+  padding: 60px 30px;
+  width: 100%;
+  justify-content: space-between;
+  background: $blue;
+  &__img {
+    width: 122px;
+    height: 48px;
+    object-fit: contain;
+  }
+  &__btn {
+    @extend %button-small;
+    margin-top: 10px;
+  }
+
+  &__icon {
+    height: 10px;
+    width: 10px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}

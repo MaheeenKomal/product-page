@@ -1,0 +1,90 @@
+.footer {
+  background: $blue;
+
+  &__info {
+    padding: 90px 0px;
+  }
+  &__text {
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+    padding: 40px 0px;
+  }
+
+  &__card {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+  &__img {
+    margin: 10px 0px;
+  }
+  &__detail {
+    @include md-text;
+    margin-bottom: 2px;
+  }
+}
+.sub-footer {
+  padding: 3rem;
+  background: $dark-blue;
+  &__group {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    @include md-text($copy);
+  }
+  &__img {
+    width: 100%;
+    max-width: 300px;
+  }
+  &__icon {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    margin: 3px;
+  }
+}
+.mini-footer {
+  padding: 1rem;
+  background: $white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  &__group {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    @include sm-text($dark);
+  }
+  &__img {
+    width: 100%;
+    max-width: 300px;
+  }
+  &__card {
+    text-align: center;
+  }
+  &__icon {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+  }
+  &__button {
+    background: $orange;
+    padding: 12px 16px;
+    border-radius: 30px;
+  }
+  &__btn {
+    font-size: 16px;
+    color: $white;
+    background: $orange;
+  }
+  &__btnicon {
+    height: 28px;
+    width: 28px;
+    object-fit: contain;
+    margin-right: 3px;
+  }
+}

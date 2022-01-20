@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add google-font link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add the bootstrap link if you want default styling -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Add font-awesome if you want default styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- light gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lg-thumbnail.min.css" />
+    <!-- Add the swiper.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--CSS EXTERNAL LINK-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ProductPage</title>
+  </head>
+  <body>
+
+    <!-- ================================== Header-Start ======================================= -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__bind d-flex align-items-center">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="navbar__bar" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </button>
+          <a class="navbar-brand navbar__logo" href="#"
+            ><img
+              src="https://static.priceoye.pk/images/logo.svg"
+              alt="missing"
+          /></a>
+        </div>
+        <form class="form-inline navbar__form">
+          <input
+            class="form-control navbar__search"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+        </form>
+        <div
+          class="sidebar collapse navbar-collapse "
+          id="navbarTogglerDemo03"
+        >
+          <ul class="sidebar__nav navbar-nav">
+            <li class="nav-item sidebar__li sidebar__li--main">
+              <div class="d-flex barbox">
+                <div class="barbox__logo">
+                  <img
+                    class="barbox__img"
+                    src="https://static.priceoye.pk/images/logo.svg"
+                    alt="logo-missing"
+                  />
+                  <button class="barbox__btn">Login</button>
+                </div>
+                <div class="barbox__close">
+                  <img src="https://static.priceoye.pk/images/not-available.svg" class=" barbox__icon"></img>
+                </div>
+              </div>
+            </li>
+
+      
+            <div class="sidebar__child">
+            <!-- dropdown -->
+           <h5 class="sidebar__name" >Category</h5>
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+            <li class="nav-item dropdown">
+                <img class="sidebar__bgImg" src="https://static.priceoye.pk/images/sidebar-mobile-icon.svg" alt="missing" />
+              <a
+                class="sidebar__toggle nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Mobiles
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Huawei</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Vivo</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">More Brands</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- end -->
+        </div>
+        <div class="sidebar__child">
+            <!-- dropdown -->
+           <h5 class="sidebar__name" >POPULAR LISTS</h5>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Camera Phones</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+           <a href=""><button class="sidebar__list-btn">Best Mobiles Under 15000</button></a>
+        </div>
+        <div class="sidebar__child">
+            <!-- dropdown -->
+           <h5 class="sidebar__name" >MAIN NAVIGATION</h5>
+           <ul class="sidebar__content">
+               <li ><a href="">About</a></li>
+               <li ><a href="">FAQs</a></li>
+               <li ><a href="">Careers</a></li>
+               <li ><a href="">Privacy</a></li>
+               <li ><a href="">E-Warranty Activation </a></li>
+               <li ><a href="">Terms & Condition</a></li>
+           </ul>
+        </div>
+          </ul>
+        </div>
+      </nav>
+       <!-- ================================== header-End ======================================= -->
+    </header>
+  <!-- ================================== banner-Start ======================================= -->
+  <section class="banner">
+      <div class="container">
+      <div class="crumb">
+          <a class="crumb__name" href="">Mobiles</a>
+          <span class="crumb__space">></span>
+          <a class="crumb__name" href="">Samsung</a>
+          <span class="crumb__space">></span>
+          <a  class="crumb__name" href="">Samsung Galaxy A22</a>
+      </div>
+      <h1 class="banner__title">Buy Samsung Galaxy A22 Price in Pakistan</h1>
+      <div class="banner__card ">
+           <div class="banner__cardheader d-flex">
+               <h2 class="banner__cardtile">Samsung Galaxy A22</h2>
+               <div class="banner__cardbox">
+                   <a  class="banner__cardIcon"
+                  href=""> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+               <a  class="banner__cardIcon" href=""><i class="fa fa-whatsapp " aria-hidden="true"></i></a>
+            <a  class="banner__cardIcon" href=""><i class="fa fa-facebook " aria-hidden="true"></i></a>
+              <a  class="banner__cardIcon banner__cardIcon--star" href=""> <i class="fa fa-star " aria-hidden="true"><span> 5</span></i></a>
+               
+              <a  href=""  class="banner__rating"> <span>32 Ratings</span></a> 
+               </div>
+           </div>
+
+           <div class="banner__cardbox">
+              <div class="row banner__row">
+                <div class="col-lg-5">
+               <div class="productSlide">
+                 <img class="fast-tag"  src="https://static.priceoye.pk/images/badges/fast.svg" alt="missing">
+                 <img class="deliver-tag"  src="  https://static.priceoye.pk/images/open-parcel.png" alt="missing">
+               
+                <div
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                class="swiper mySwiper2 productSlide__bar"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="productSlide__img" src="https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-xhw4y-500x500.webp" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img  class="productSlide__img" src="	https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-cbjdt-500x500.webp" />
+                  </div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper thumb-wrapper">
+                  <div class="swiper-slide productSlide__imgthumb">
+                    <img class="productSlide__imagethumb"  src="https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-xhw4y-500x500.webp" />
+                  </div>
+                  <div class="swiper-slide productSlide__imgthumb">
+                    <img class="productSlide__imagethumb" src="	https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-cbjdt-500x500.webp" />
+                  </div>
+                 
+           
+                </div>
+              </div>
+          
+               </div>
+              </div>
+              <div class="col-lg-5">
+               <div class="productInfo">
+                 <div class="productInfo__priceBox d-flex">
+                        <div class="productInfo__hold ">
+                          <h3 class="productInfo__text">PriceOye Price</h3>
+                          <h5 class="productInfo__price">Rs.35,399</h5>
+                        </div>
+                        <div class="productInfo__hold productInfo__hold--change">
+                          <h3 class="productInfo__text">PriceOye Price</h3>
+                          <h5 class="productInfo__price productInfo__price--original">Rs.37,399</h5>
+                        </div>
+                       <h3 class="productInfo__offPrice">7% OFF</h3>
+                 </div>
+                      
+                 <div class="productInfo__available">
+                  <h3 class="productInfo__text">Availibility</h3>
+                  <h4 class="productInfo__stock">In Stock</h4>
+                 </div>
+                 
+                 <div class="productInfo__chain">
+                  <h3 class="productInfo__text">Colors</h3>
+                  <div class="productInfo__list d-flex">
+                        <div class="productInfo__card ">
+                          <img class="productInfo__cardImg" src="	https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-wy1z3-100x100.webp" alt="missing">
+                          <h5 class="productInfo__cardText">Black</h5>
+                        </div>
+                        <div class="productInfo__card">
+                          <img class="productInfo__cardImg" src="	https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-wy1z3-100x100.webp" alt="missing">
+                          <h5 class="productInfo__cardText">Black</h5>
+                        </div>
+                        <div class="productInfo__card">
+                          <img class="productInfo__cardImg" src="	https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-wy1z3-100x100.webp" alt="missing">
+                          <h5 class="productInfo__cardText">Black</h5>
+                        </div>
+                        <div class="productInfo__card">
+                          <img class="productInfo__cardImg" src="	https://images.priceoye.pk/samsung-galaxy-a22-pakistan-priceoye-wy1z3-100x100.webp" alt="missing">
+                          <h5 class="productInfo__cardText">Black</h5>
+                        </div>
+                  </div>
+                 </div>
+
+                 <div class="productInfo__storage">
+                  <h3 class="productInfo__text">Storage</h3>
+                  <div class="productInfo__bindstore d-flex">
+                    <button class="productInfo__storeBtn active">128GB - 4GB RAM</button>
+                    <button class="productInfo__storeBtn">128GB - 4GB RAM</button>
+                  </div>
+                 </div>
+
+                    <div class="productInfo__boxStyle d-flex">
+                         <button class="productInfo__btnStyle">Add to Cart</button>
+                         <button class="productInfo__btnStyle productInfo__btnStyle--change">Compare</button>
+                    </div>      
+               </div>
+              </div>
+              <div class="col-lg-2">
+               <div class="productDetail">
+                <div class="productDetail__info">
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+              
+                </div>
+                  <div class="productDetail__info productDetail__info--change">
+                    
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+                  <div class="productDetail__card d-flex">
+                    <img class="productDetail__img" src="https://static.priceoye.pk/icons/feature-approved.svg" alt="missing">
+                    <div class="productDetail__box">
+                      <h4 class="productDetail__bold">PTA Approved</h4>
+                      <h5 class="productDetail__light">Mobile Phone</h5>
+                    </div>
+                  </div>
+
+                  </div>
+               </div>
+              </div>
+           </div>
+          </div>
+      </div>
+<!-- Bannner-openParcel -->
+        <div class="openParcel">
+          <img class="openParcel__img" src="https://images.priceoye.pk/pakistan-priceoye-slider-zxy05.png" alt="missing">
+        </div>
+
+
+       <!-- ================================== banner-End ======================================= -->
+    </div>
+  </section>
+     <!-- ================================== product-start ======================================= -->
+
+  <section class="cardProduct">
+    <div class="container">
+      <div class="cardProduct__content">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="cardProduct__info">
+            <img class="cardProduct__img" src="https://static.priceoye.pk/images/similar-icons.svg" alt="missing">
+            <h2 class="cardProduct__title">Similar Mobiles to Samsung Galaxy A22</h2>
+            <h4 class="cardProduct__detail">These are some mobiles you can buy similar to Samsung Galaxy A22. I think you’ll like them, too.</h4>
+          </div>
+        </div>
+          <div class="col-md-8">
+            <div class="cardProduct__info1">
+              <div class="cardProduct__sectionCard d-flex">
+                <div class="cardProduct__card">
+                  <img class="cardProduct__cardImg" src="https://images.priceoye.pk/xiaomi-redmi-10-pakistan-priceoye-lmps1-270x270.webp" alt="missing">
+                 <h5 class="cardProduct__cardTitle">
+                  Xiaomi Redmi 10        </h5>
+                  <h4 class="cardProduct__cardPrice">
+                    Rs. 27,499        </h4>
+                  <span class="cardProduct__original">Rs. 28,499</span>
+                  <span class="cardProduct__discount">Rs. 1000 OFF</span> 
+                </div>
+                <div class="cardProduct__card">
+                  <img class="cardProduct__cardImg" src="https://images.priceoye.pk/xiaomi-redmi-10-pakistan-priceoye-lmps1-270x270.webp" alt="missing">
+                 <h5 class="cardProduct__cardTitle">
+                  Xiaomi Redmi 10        </h5>
+                  <h4 class="cardProduct__cardPrice">
+                    Rs. 27,499        </h4>
+                  <span class="cardProduct__original">Rs. 28,499</span>
+                  <span class="cardProduct__discount">Rs. 1000 OFF</span> 
+                </div>
+              </div>
+              <div class="cardProduct__sectionCard cardProduct__sectionCard--top d-flex">
+                <div class="cardProduct__card">
+                  <img class="cardProduct__cardImg" src="https://images.priceoye.pk/xiaomi-redmi-10-pakistan-priceoye-lmps1-270x270.webp" alt="missing">
+                 <h5 class="cardProduct__cardTitle">
+                  Xiaomi Redmi 10        </h5>
+                  <h4 class="cardProduct__cardPrice">
+                    Rs. 27,499        </h4>
+                  <span class="cardProduct__original">Rs. 28,499</span>
+                  <span class="cardProduct__discount">Rs. 1000 OFF</span> 
+                </div>
+                <div class="cardProduct__card">
+                  <img class="cardProduct__cardImg" src="https://images.priceoye.pk/xiaomi-redmi-10-pakistan-priceoye-lmps1-270x270.webp" alt="missing">
+                 <h5 class="cardProduct__cardTitle">
+                  Xiaomi Redmi 10        </h5>
+                  <h4 class="cardProduct__cardPrice">
+                    Rs. 27,499        </h4>
+                    <div class="cardProduct__cardBind">
+                  <span class="cardProduct__original">Rs. 28,499</span>
+                  <span class="cardProduct__discount">Rs. 1000 OFF</span> 
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- ================================== product-end ======================================= -->
+    </div>
+  </section>
+    <!-- ================================== Faqs-start ======================================= -->
+    <section class="faqs">
+      <div class="container">
+           <h2 class="faqs__title">FAQS</h2>
+           <div class="faqs__group">
+                  <div class="faqs__card">
+                     <img class="faqs__img" src="https://priceoye-images.s3.amazonaws.com/media/A15/A22/Aweson%20screen.webp" alt="missing">
+                     <h4 class="faqs__cardTitle ">Awesome Screen</h4>
+                     <h5 class="faqs__cardDetail">Expand your view to the 6.4-inch Infinity-U Display on Galaxy A22 and see what you've been missing. HD+ Super AMOLED display and 600 nits¹ for clarity</h5>
+                  </div>
+                  <div class="faqs__card">
+                    <img class="faqs__img" src="https://priceoye-images.s3.amazonaws.com/media/A15/A22/Aweson%20screen.webp" alt="missing">
+                    <h4 class="faqs__cardTitle ">Awesome Screen</h4>
+                    <h5 class="faqs__cardDetail">Expand your view to the 6.4-inch Infinity-U Display on Galaxy A22 and see what you've been missing. HD+ Super AMOLED display and 600 nits¹ for clarity</h5>
+                 </div>
+                 <div class="faqs__card">
+                  <img class="faqs__img" src="https://priceoye-images.s3.amazonaws.com/media/A15/A22/Aweson%20screen.webp" alt="missing">
+                  <h4 class="faqs__cardTitle ">Awesome Screen</h4>
+                  <h5 class="faqs__cardDetail">Expand your view to the 6.4-inch Infinity-U Display on Galaxy A22 and see what you've been missing. HD+ Super AMOLED display and 600 nits¹ for clarity</h5>
+               </div>
+           </div>
+           <div class="faqs__group faqs__group--last ">
+            <div class="faqs__card">
+               <img class="faqs__img" src="https://priceoye-images.s3.amazonaws.com/media/A15/A22/Aweson%20screen.webp" alt="missing">
+               <h4 class="faqs__cardTitle ">Awesome Screen</h4>
+               <h5 class="faqs__cardDetail">Expand your view to the 6.4-inch Infinity-U Display on Galaxy A22 and see what you've been missing. HD+ Super AMOLED display and 600 nits¹ for clarity</h5>
+            </div>
+            <div class="faqs__card">
+              <img class="faqs__img" src="https://priceoye-images.s3.amazonaws.com/media/A15/A22/Aweson%20screen.webp" alt="missing">
+              <h4 class="faqs__cardTitle ">Awesome Screen</h4>
+              <h5 class="faqs__cardDetail">Expand your view to the 6.4-inch Infinity-U Display on Galaxy A22 and see what you've been missing. HD+ Super AMOLED display and 600 nits¹ for clarity</h5>
+           </div>
+           <div class="faqs__card">
+            <img class="faqs__img" src="https://priceoye-images.s3.amazonaws.com/media/A15/A22/Aweson%20screen.webp" alt="missing">
+            <h4 class="faqs__cardTitle ">Awesome Screen</h4>
+            <h5 class="faqs__cardDetail">Expand your view to the 6.4-inch Infinity-U Display on Galaxy A22 and see what you've been missing. HD+ Super AMOLED display and 600 nits¹ for clarity</h5>
+         </div>
+     </div>
+          </div>
+            <!-- ================================== Faqs-End ======================================= -->
+
+    </section>
+
+  <!-- ================================== Specs-start ======================================= -->
+<section class="specs">
+  <div class="container">
+  <h2 class="specs__title">Samsung Galaxy A22 Specs</h2>
+<div class="specs__info  d-flex">
+  <div class="specs__group">
+     <div class="specs__card">
+      <table class="table specs__table">
+        <thead>
+          <tr>
+            <th class="specs__t1" >
+              General Features</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Release Date</th>
+            <td>	2021-03-01</td>
+          </tr>
+          <tr>
+            <th>SIM Support</th>
+            <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+          </tr>
+          <tr>
+            <th>Release Date</th>
+            <td>	2021-03-01</td>
+          </tr>
+          <tr>
+            <th>SIM Support</th>
+            <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+
+     <div class="specs__card">
+      <table class="table specs__table">
+        <thead>
+          <tr>
+            <th class="specs__t2" >
+              General Features</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Release Date</th>
+            <td>	2021-03-01</td>
+          </tr>
+          <tr>
+            <th>SIM Support</th>
+            <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+          </tr>
+          <tr>
+            <th>Release Date</th>
+            <td>	2021-03-01</td>
+          </tr>
+          <tr>
+            <th>SIM Support</th>
+            <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+
+     <div class="specs__card">
+      <table class="table specs__table">
+        <thead>
+          <tr>
+            <th class="specs__t3" >
+              General Features</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Release Date</th>
+            <td>	2021-03-01</td>
+          </tr>
+          <tr>
+            <th>SIM Support</th>
+            <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+          </tr>
+          <tr>
+            <th>Release Date</th>
+            <td>	2021-03-01</td>
+          </tr>
+   
+        </tbody>
+      </table>
+     </div>
+
+     <div class="specs__card">
+      <table class="table specs__table">
+        <thead>
+          <tr>
+            <th class="specs__t4" >
+              General Features</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Release Date</th>
+            <td>	2021-03-01</td>
+          </tr>
+          <tr>
+            <th>SIM Support</th>
+            <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+          </tr>
+       
+        </tbody>
+      </table>
+     </div>
+
+
+    </div>
+    <div class="specs__group specs__group--change">
+      <div class="specs__card">
+        <table class="table specs__table">
+          <thead>
+            <tr>
+              <th class="specs__t5" >
+                General Features</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Release Date</th>
+              <td>	2021-03-01</td>
+            </tr>
+            <tr>
+              <th>SIM Support</th>
+              <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+            </tr>
+       
+     
+          </tbody>
+        </table>
+       </div>
+
+       <div class="specs__card">
+        <table class="table specs__table">
+          <thead>
+            <tr>
+              <th class="specs__t6" >
+                General Features</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Release Date</th>
+              <td>	2021-03-01</td>
+            </tr>
+            <tr>
+              <th>SIM Support</th>
+              <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+            </tr>
+            <tr>
+              <th>Release Date</th>
+              <td>	2021-03-01</td>
+            </tr>
+     
+          </tbody>
+        </table>
+       </div>
+
+       <div class="specs__card">
+        <table class="table specs__table">
+          <thead>
+            <tr>
+              <th class="specs__t7" >
+                General Features</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Release Date</th>
+              <td>	2021-03-01</td>
+            </tr>
+            <tr>
+              <th>SIM Support</th>
+              <td>	Dual SIM (Nano-SIM, dual stand-by)</td>
+            </tr>
+            <tr>
+              <th>Release Date</th>
+              <td>	2021-03-01</td>
+            </tr>
+     
+          </tbody>
+        </table>
+       </div>
+     </div>
+
+  </div>
+      <!-- ================================== Specs-end ======================================= -->
+    </div>
+</section>
+
+     <!-- ================================== PriceTags ======================================= -->
+<section class="priceTags">
+  <div class="container">
+ <div class="row">
+   <div class="col-md-5">
+     <div class="priceTags__content">
+      <h2 class="priceTags__title">Compare Samsung Galaxy A22 Prices</h2>
+      <h4 class="priceTags__detail">
+
+        Samsung Galaxy A22's lowest price in Pakistan is <strong>Rs.35,399</strong>. The online store PriceOye offers the best price for this Samsung Mobile when compared among 4 sellers. </h4>
+      <h5 class="priceTags__amount"> Rs. 35,399<span class="priceTags__amountSpan"> @PriceOye</span></h5>
+      <button class="priceTags__btn">Add to cart</button>
+     </div>
+   </div>
+   <div class="col-md-7">
+   <div class="priceTags__content1">
+     <div class="priceTags__rowBox d-flex">
+     <div class="priceTags__rateNum">
+       <img class="priceTags__star" src="https://static.priceoye.pk/images/rating-star-green.svg" alt="missing">
+       <h6 class="priceTags__num">5.0</h6>
+     </div>
+     <div class="priceTags__brand">
+       <img class="priceTags__brandInfo" src="https://static.priceoye.pk/images/logo.svg" alt="missing">
+     </div>
+     <div class="priceTags__bind ">
+       <h4 class="priceTags__value">Rs.35,399</h4>
+       <div class="priceTags__boxBind d-flex">
+       <div class="priceTags__box d-flex">
+         <img class="priceTags__deliveryIcon" src="https://static.priceoye.pk/images/icon-delivery.png" alt="missing">
+         <h6 class="priceTags__deliverTime"> Delivery: 24hr Delivery</h6>
+       </div>
+        <div class="priceTags__box  priceTags__box--extend d-flex">
+         <img class="priceTags__deliveryIcon" src="https://static.priceoye.pk/images/icon-warranty.png" alt="missing">
+         <h6 class="priceTags__deliverTime">Warranty: 1 Year Warranty</h6>
+       </div>
+      </div>
+     </div>
+     </div>
+
+     <div class="priceTags__rowBox priceTags__rowBox--extend d-flex">
+      <div class="priceTags__rateNum">
+        <img class="priceTags__star" src="https://static.priceoye.pk/images/rating-star-green.svg" alt="missing">
+        <h6 class="priceTags__num">5.0</h6>
+      </div>
+      <div class="priceTags__brand">
+        <img class="priceTags__brandInfo" src="https://static.priceoye.pk/images/logo.svg" alt="missing">
+      </div>
+      <div class="priceTags__bind ">
+        <h4 class="priceTags__value">Rs.35,399</h4>
+        <div class="priceTags__boxBind d-flex">
+        <div class="priceTags__box d-flex">
+          <img class="priceTags__deliveryIcon" src="https://static.priceoye.pk/images/icon-delivery.png" alt="missing">
+          <h6 class="priceTags__deliverTime"> Delivery: 24hr Delivery</h6>
+        </div>
+         <div class="priceTags__box  priceTags__box--extend d-flex">
+          <img class="priceTags__deliveryIcon" src="https://static.priceoye.pk/images/icon-warranty.png" alt="missing">
+          <h6 class="priceTags__deliverTime">Warranty: 1 Year Warranty</h6>
+        </div>
+       </div>
+      </div>
+      </div>
+    </div>
+   </div>
+ </div>
+  <!-- ================================== PriceEnd======================================= -->
+</div>
+</section>
+  <!-- ================================== VariantStart ======================================= -->
+<section class="variant">
+<div class="container">
+ <div class="row variant__bind">
+   <div class="col-md-6">
+     <h2 class="variant__title"> Samsung Galaxy A22 Price in Pakistan by Variants</h2>
+   </div>
+   <div class="col-md-6">
+     <div class="variant__card">
+        <table class="table variant__table">
+          <thead>
+            <tr>
+              <th>VARIANTS</th>
+              <th>PRICE</th>
+              <th>STORES</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a  href="">Samsung Galaxy A22 128GB - 4GB RAM Black</a></td>
+              <td>Rs. 35,299</td>
+              <td>HomeShopping</td>
+            </tr>
+            <tr>
+              <td><a href="">Samsung Galaxy A22 128GB - 4GB RAM Black</a></td>
+              <td>	Rs. 35,299</td>
+              <td>HomeShopping</td>
+            </tr>
+            <tr>
+              <td><a href="">Samsung Galaxy A22 128GB - 4GB RAM Black</a></td>
+              <td>Rs. 35,299</td>
+              <td>HomeShopping</td>
+            </tr>
+            <tr>
+              <td><a href="">Samsung Galaxy A22 128GB - 4GB RAM Black</a></td>
+              <td>	Rs. 35,299</td>
+              <td>HomeShopping</td>
+            </tr>
+            <tr>
+              <td><a  href="">Samsung Galaxy A22 128GB - 4GB RAM Black</a></td>
+              <td>Rs. 35,299</td>
+              <td>HomeShopping</td>
+            </tr>
+            <tr>
+              <td><a  href="">Samsung Galaxy A22 128GB - 4GB RAM Black</a></td>
+              <td>Rs. 35,299</td>
+              <td>HomeShopping</td>
+            </tr>
+            <tr>
+              <td><a  href="">Samsung Galaxy A22 128GB - 4GB RAM Black</a></td>
+              <td>Rs. 35,299</td>
+              <td>HomeShopping</td>
+            </tr>
+            
+          </tbody>
+        </table>
+     </div>
+   </div>
+ </div>
+</div>
+
+ <!-- ================================== VariantEnd ======================================= -->
+</section>
+
+ <!-- ================================== RewiewStart ======================================= -->
+<section class="review">
+<div class="container">
+  <div class="review__content">
+    <div class="review__header">
+      <div class="review__box">
+        <img class="review__img" src="https://static.priceoye.pk/images/rating-star.svg" alt="missing">
+        <h3 class="review__number">4.8</h3>
+        <h4 class="review__value">32 <span class="review__span">Reviews</span> </h4>
+      </div>
+      <h2 class="review__title">Reviews of Samsung Galaxy A22</h2>
+    </div>
+    <div class="review__body">
+      <div class="review__bars d-flex">
+       <div class="review__person">
+         <img class="review__imgPerson" src="https://static.priceoye.pk/images/user-icon.svg" alt="missing">
+       </div>
+       
+          <div class="review__contain">
+            <h5 class="review__text">Sameer Ayaz </h5>
+            <div class="review__checkbox"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
+          </div>
+          <span class="review__verify"><img class="review__verifyimg" src="https://static.priceoye.pk/images/verified-circle.svg" alt="missing">verified customer</span>
+        </div> 
+
+        <div class="review__msg">
+          <h5 class="review__msgInfo">Good service. Right original product with all the accessories delivered within couple of days at good price.  </h5>
+          <div id="animated-thumbnails" class="review__gallery">
+            <a href="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" target="blank">
+                <img class="review__light" src="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+                <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+              <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+          </a>
+          <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+            <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+        </a>
+       
+        </div>
+        </div>
+        <div class="review__bot">
+          <h5 class="review__msgInfo">Dear Sir, Thank you for choosing PriceOye. We always strive to provide you with the best service and genuine products at the best prices.</h5>
+           </div>
+    </div>
+
+    <div class="review__body">
+      <div class="review__bars d-flex">
+       <div class="review__person">
+         <img class="review__imgPerson" src="https://static.priceoye.pk/images/user-icon.svg" alt="missing">
+       </div>
+       
+          <div class="review__contain">
+            <h5 class="review__text">Sameer Ayaz </h5>
+            <div class="review__checkbox"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
+          </div>
+          <span class="review__verify"><img class="review__verifyimg" src="https://static.priceoye.pk/images/verified-circle.svg" alt="missing">verified customer</span>
+        </div> 
+
+        <div class="review__msg">
+          <h5 class="review__msgInfo">Good service. Right original product with all the accessories delivered within couple of days at good price.  </h5>
+          <div id="animated-thumbnails" class="review__gallery">
+            <a href="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" target="blank">
+                <img class="review__light" src="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+                <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+              <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+          </a>
+          <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+            <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+        </a>
+       
+        </div>
+        </div>
+        <div class="review__bot">
+          <h5 class="review__msgInfo">Dear Sir, Thank you for choosing PriceOye. We always strive to provide you with the best service and genuine products at the best prices.</h5>
+           </div>
+    </div>
+
+
+    <div class="review__body">
+      <div class="review__bars d-flex">
+       <div class="review__person">
+         <img class="review__imgPerson" src="https://static.priceoye.pk/images/user-icon.svg" alt="missing">
+       </div>
+       
+          <div class="review__contain">
+            <h5 class="review__text">Sameer Ayaz </h5>
+            <div class="review__checkbox"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
+          </div>
+          <span class="review__verify"><img class="review__verifyimg" src="https://static.priceoye.pk/images/verified-circle.svg" alt="missing">verified customer</span>
+        </div> 
+
+        <div class="review__msg">
+          <h5 class="review__msgInfo">Good service. Right original product with all the accessories delivered within couple of days at good price.  </h5>
+          <div id="animated-thumbnails" class="review__gallery">
+            <a href="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" target="blank">
+                <img class="review__light" src="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+                <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+              <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+          </a>
+          <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+            <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+        </a>
+       
+        </div>
+        </div>
+        <div class="review__bot">
+          <h5 class="review__msgInfo">Dear Sir, Thank you for choosing PriceOye. We always strive to provide you with the best service and genuine products at the best prices.</h5>
+           </div>
+    </div>
+
+
+    <div class="review__body">
+      <div class="review__bars d-flex">
+       <div class="review__person">
+         <img class="review__imgPerson" src="https://static.priceoye.pk/images/user-icon.svg" alt="missing">
+       </div>
+       
+          <div class="review__contain">
+            <h5 class="review__text">Sameer Ayaz </h5>
+            <div class="review__checkbox"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
+          </div>
+          <span class="review__verify"><img class="review__verifyimg" src="https://static.priceoye.pk/images/verified-circle.svg" alt="missing">verified customer</span>
+        </div> 
+
+        <div class="review__msg">
+          <h5 class="review__msgInfo">Good service. Right original product with all the accessories delivered within couple of days at good price.  </h5>
+          <div id="animated-thumbnails" class="review__gallery">
+            <a href="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" target="blank">
+                <img class="review__light" src="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+                <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+              <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+          </a>
+          <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+            <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+        </a>
+       
+        </div>
+        </div>
+        
+    </div>
+
+
+    <div class="review__body">
+      <div class="review__bars d-flex">
+       <div class="review__person">
+         <img class="review__imgPerson" src="https://static.priceoye.pk/images/user-icon.svg" alt="missing">
+       </div>
+       
+          <div class="review__contain">
+            <h5 class="review__text">Sameer Ayaz </h5>
+            <div class="review__checkbox"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
+          </div>
+          <span class="review__verify"><img class="review__verifyimg" src="https://static.priceoye.pk/images/verified-circle.svg" alt="missing">verified customer</span>
+        </div> 
+
+        <div class="review__msg">
+          <h5 class="review__msgInfo">Good service. Right original product with all the accessories delivered within couple of days at good price.  </h5>
+          <div id="animated-thumbnails" class="review__gallery">
+            <a href="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" target="blank">
+                <img class="review__light" src="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+                <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+              <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+          </a>
+          <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+            <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+        </a>
+       
+        </div>
+        </div>
+        <div class="review__bot">
+          <h5 class="review__msgInfo">Dear Sir, Thank you for choosing PriceOye. We always strive to provide you with the best service and genuine products at the best prices.</h5>
+           </div>
+    </div>
+
+
+    <div class="review__body">
+      <div class="review__bars d-flex">
+       <div class="review__person">
+         <img class="review__imgPerson" src="https://static.priceoye.pk/images/user-icon.svg" alt="missing">
+       </div>
+       
+          <div class="review__contain">
+            <h5 class="review__text">Sameer Ayaz </h5>
+            <div class="review__checkbox"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
+          </div>
+          <span class="review__verify"><img class="review__verifyimg" src="https://static.priceoye.pk/images/verified-circle.svg" alt="missing">verified customer</span>
+        </div> 
+
+        <div class="review__msg">
+          <h5 class="review__msgInfo">Good service. Right original product with all the accessories delivered within couple of days at good price.  </h5>
+          <div id="animated-thumbnails" class="review__gallery">
+            <a href="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" target="blank">
+                <img class="review__light" src="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+                <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+              <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+          </a>
+          <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+            <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+        </a>
+       
+        </div>
+        </div>
+        
+    </div>
+
+
+    <div class="review__body">
+      <div class="review__bars d-flex">
+       <div class="review__person">
+         <img class="review__imgPerson" src="https://static.priceoye.pk/images/user-icon.svg" alt="missing">
+       </div>
+       
+          <div class="review__contain">
+            <h5 class="review__text">Sameer Ayaz </h5>
+            <div class="review__checkbox"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
+          </div>
+          <span class="review__verify"><img class="review__verifyimg" src="https://static.priceoye.pk/images/verified-circle.svg" alt="missing">verified customer</span>
+        </div> 
+
+        <div class="review__msg">
+          <h5 class="review__msgInfo">Good service. Right original product with all the accessories delivered within couple of days at good price.  </h5>
+          <div id="animated-thumbnails" class="review__gallery">
+            <a href="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" target="blank">
+                <img class="review__light" src="	https://images.priceoye.pk/review/3069/83069-xw7zi.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+                <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+            </a>
+            <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+              <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+          </a>
+          <a href="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" target="blank">
+            <img class="review__light" src="https://images.priceoye.pk/review/3069/83069-bu592-94x94.jpeg" />
+        </a>
+       
+        </div>
+        </div>
+        <div class="review__bot">
+          <h5 class="review__msgInfo">Dear Sir, Thank you for choosing PriceOye. We always strive to provide you with the best service and genuine products at the best prices.</h5>
+           </div>
+    </div>
+  <div class="review__button">
+    <button class="review__btn">Show More</button>
+  </div>
+  </div>
+</div>
+ <!-- ================================== RewiewEnd ======================================= -->
+</section>
+
+ <!-- ================================== QuestionStart ======================================= -->
+<section class="question" >
+  <div class="container">
+    <div class="question__content">
+        <h2 class="question__title">Questions About Samsung Galaxy A22</h2>
+        <div class="question__holder">
+        <textarea class="question__area" name="" cols="30" rows="10">Write questions here</textarea>
+      </div>
+        <div class="question__button">
+           <button class="question__btn">Ask Question</button>
+        </div>
+        <h3 class="question__sm-title">Recent Questions</h3>
+        <div class="question__body">
+          <div class="question__menu">
+            <h4 class="question__client"> <span class="question__span">Q.</span> 
+              I want to purchase on installments with same price is it possible</h4>
+              <div class="d-flex question__group">
+              <h4 class=" question__ans"> <span class="question__spanAns">Q.</span> 
+                I want to purchase on installments with same price is it possible</h4>
+            
+              <div class="question__icon">
+             <span class="question__thumb" ><img class="question__iconImg" src="https://static.priceoye.pk/images/like.svg" alt="missing"> 1 Like</span>
+              <span class="question__thumb"><img class="question__iconImg" src="	https://static.priceoye.pk/images/dislike.svg" alt="missing"> 0 Dislike</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question__body">
+          <div class="question__menu">
+            <h4 class="question__client"> <span class="question__span">Q.</span> 
+              I want to purchase on installments with same price is it possible</h4>
+              <div class="d-flex question__group">
+              <h4 class=" question__ans"> <span class="question__spanAns">Q.</span> 
+                I want to purchase on installments with same price is it possible</h4>
+            
+              <div class="question__icon">
+             <span class="question__thumb" ><img class="question__iconImg" src="https://static.priceoye.pk/images/like.svg" alt="missing"> 1 Like</span>
+              <span class="question__thumb"><img class="question__iconImg" src="	https://static.priceoye.pk/images/dislike.svg" alt="missing"> 0 Dislike</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="question__body">
+          <div class="question__menu">
+            <h4 class="question__client"> <span class="question__span">Q.</span> 
+              I want to purchase on installments with same price is it possible</h4>
+              <div class="d-flex question__group">
+              <h4 class=" question__ans"> <span class="question__spanAns">Q.</span> 
+                I want to purchase on installments with same price is it possible</h4>
+            
+              <div class="question__icon">
+             <span class="question__thumb" ><img class="question__iconImg" src="https://static.priceoye.pk/images/like.svg" alt="missing"> 1 Like</span>
+              <span class="question__thumb"><img class="question__iconImg" src="	https://static.priceoye.pk/images/dislike.svg" alt="missing"> 0 Dislike</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question__body">
+          <div class="question__menu">
+            <h4 class="question__client"> <span class="question__span">Q.</span> 
+              I want to purchase on installments with same price is it possible</h4>
+              <div class="d-flex question__group">
+              <h4 class=" question__ans"> <span class="question__spanAns">Q.</span> 
+                I want to purchase on installments with same price is it possible</h4>
+            
+              <div class="question__icon">
+             <span class="question__thumb" ><img class="question__iconImg" src="https://static.priceoye.pk/images/like.svg" alt="missing"> 1 Like</span>
+              <span class="question__thumb"><img class="question__iconImg" src="	https://static.priceoye.pk/images/dislike.svg" alt="missing"> 0 Dislike</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question__body">
+          <div class="question__menu">
+            <h4 class="question__client"> <span class="question__span">Q.</span> 
+              I want to purchase on installments with same price is it possible</h4>
+              <div class="d-flex question__group">
+              <h4 class=" question__ans"> <span class="question__spanAns">Q.</span> 
+                I want to purchase on installments with same price is it possible</h4>
+            
+              <div class="question__icon">
+             <span class="question__thumb" ><img class="question__iconImg" src="https://static.priceoye.pk/images/like.svg" alt="missing"> 1 Like</span>
+              <span class="question__thumb"><img class="question__iconImg" src="	https://static.priceoye.pk/images/dislike.svg" alt="missing"> 0 Dislike</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="question__body">
+      <div class="question__more">
+        <button class="question__morebtn">Show More</button>
+      </div>
+        </div>
+      </div>
+  <!-- ================================== QuestionStart ======================================= -->
+  </div>
+</section>
+
+ <!-- ================================== warrentyStart ======================================= -->
+<section class="warranty">
+ <div class=" warranty__info d-flex">
+        <div class="warranty__card">	
+          <img class="warranty__img" src="https://static.priceoye.pk/images/percentage.svg" alt="missing">
+          <h3 class="warranty__detail">100% Original Products</h3>
+        </div>
+        <div class="warranty__card">	
+          <img class="warranty__img" src="https://static.priceoye.pk/images/cockade.svg" alt="missing">
+          <h3 class="warranty__detail">1 Year Warranty</h3>
+        </div>
+        <div class="warranty__card">	
+          <img class="warranty__img" src="	https://static.priceoye.pk/images/replace.svg
+          " alt="missing">
+          <h3 class="warranty__detail">Easy Replacement</h3>
+        </div>
+ </div>
+
+   <!-- ================================== warrentyEnd ======================================= -->
+</section>
+   <!-- ================================== footerStart ======================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-info">
+      <h2 class="footer__text">We’re always ready to help.</h2>
+      <div class="footer__group d-flex">
+        <div class="footer__card">	
+          <img class="footer__img" src="	https://static.priceoye.pk/images/footer-sub-whatsapp.svg " alt="missing">
+          <a href=""> <h3 class="footer__detail">03-111-577-577</h3></a>
+        </div>
+
+        <div class="footer__card">	
+          <img class="footer__img" src="https://static.priceoye.pk/images/footer-sub-mail.svg" alt="missing">
+          <a href=""><h3 class="footer__detail">Email</h3></a>
+        </div>
+        <div class="footer__card">	
+          <img class="footer__img" src="	https://static.priceoye.pk/images/footer-sub-call.svg" alt="missing">
+          <a href=""> <h3 class="footer__detail">051 884 7777</h3></a>
+          <a href=""> <h3 class="footer__detail">10am to 8pm</h3></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <div class="sub-footer__group d-flex">
+      <h4 class="sub-footer__title">
+        &copy; 2022
+        PriceOye.pk
+      </h4>
+      <div class="sub-footer__image">
+        <img class="sub-footer__img" src="https://static.priceoye.pk/images/payment_method.svg" alt="missing">
+      </div>
+     
+      <div class="sub-footer__bind d-flex">	
+        <img class="sub-footer__icon" src="	https://static.priceoye.pk/images/social-youtube.svg" alt="missing">
+        <img class="sub-footer__icon" src=" https://static.priceoye.pk/images/social-fb.svg" alt="missing">
+        <img class="sub-footer__icon" src="	https://static.priceoye.pk/images/social-instagram.svg" alt="missing">
+        <img class="sub-footer__icon" src="https://static.priceoye.pk/images/linkedin.svg" alt="missing">
+      </div>
+    </div>
+  </div>
+   
+  <div class="mini-footer">
+    <div class="mini-footer__group d-flex">
+      <div class="mini-footer__card">
+        <img class="mini-footer__icon" src="https://static.priceoye.pk/images/stickyrating.svg" alt="missing">
+        <h5 class="mini-footer__text">Review</h5>
+      </div>
+      <div class="mini-footer__card">
+        <img class="mini-footer__icon" src="	https://static.priceoye.pk/images/Specs_svg.svg" alt="missing">
+        <h5 class="mini-footer__text">Specs</h5>
+      </div>
+      <div class="mini-footer__card">
+        <img class="mini-footer__icon" src="	https://static.priceoye.pk/images/Compare_svg.svg" alt="missing">
+        <h5 class="mini-footer__text">Compare</h5>
+      </div>
+      <div class="mini-footer__button d-flex">
+        <img class="mini-footer__btnicon" src="https://static.priceoye.pk/images/order.svg" alt="missing">
+        <button class="mini-footer__btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- Add jquery if you want default styling -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <!--Add JS links if you want default styling -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <!-- Add SWIPER-JS link if you want default styling -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/fullscreen/lg-fullscreen.min.js"></script>
+ <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script>
+    $(function() {
+        $('.barbox__close').click(function() {
+            $(".sidebar.show").removeClass("show");
+                $(this).addClass('show');
+            });
+        });
+      </script>
+
+    <script>
+      $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+        if (!$(this).next().hasClass("show")) {
+          $(this)
+            .parents(".dropdown-menu")
+            .first()
+            .find(".show")
+            .removeClass("show");
+        }
+        var $subMenu = $(this).next(".dropdown-menu");
+        $subMenu.toggleClass("show");
+        $(this)
+          .parents("li.nav-item.dropdown.show")
+          .on("hidden.bs.dropdown", function (e) {
+            $(".dropdown-submenu .show").removeClass("show");
+          });
+        return false;
+      });
+    </script>
+    <script>
+      lightGallery(document.getElementById('animated-thumbnails'), {
+        thumbnail:true,
+    autoplay:true,
+    pager:true,
+});
+
+    </script>
+     <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+  </body>
+</html>

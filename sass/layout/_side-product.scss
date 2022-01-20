@@ -1,0 +1,74 @@
+.cardProduct {
+  background: $gradient-invert;
+  overflow: hidden;
+  &__content {
+    background: $white;
+  }
+  &__info {
+    background: url("https://static.priceoye.pk/images/product-price.jpg")
+      no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding: 30px;
+  }
+  &__img {
+    width: 79px;
+    height: 48px;
+    object-fit: contain;
+    margin: 35px 0px;
+  }
+  &__title {
+    font-size: 24px;
+    color: $white;
+  }
+  &__detail {
+    @include md-text;
+  }
+  &__card {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    &:nth-child(odd) {
+      border-right: 1px solid $border;
+    }
+  }
+  &__info1 {
+    display: flex;
+    flex-direction: column;
+  }
+  &__cardImg {
+    width: 100%;
+    max-width: 120px;
+    height: 135px;
+  }
+  &__cardTitle {
+    @include md-text($bright);
+  }
+  &__cardPrice {
+    @include bold-text;
+  }
+  &__discount {
+    font-size: 12px;
+    color: $orange;
+    border: 1px solid $orange;
+    padding: 3px;
+    width: 86px;
+  }
+  &__original {
+    font-size: 10px;
+    color: $light;
+    text-decoration: line-through;
+  }
+  &__sectionCard--top {
+    border-top: 1px solid $border;
+  }
+}
+.cardProduct .col-md-4 {
+  padding-right: initial;
+  padding-left: initial;
+}
+.cardProduct .col-md-8 {
+  padding-right: initial;
+  padding-left: initial;
+}

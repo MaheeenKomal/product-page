@@ -1,0 +1,194 @@
+// ----------------- Media-Queries  ------------------- //
+@media (max-width: $wide) {
+  /*---------------- Banner ----------------*/
+}
+@media (max-width: $computer) {
+  /*---------------- Banner ----------------*/
+  .banner .productInfo {
+    border-top: 1px solid #dbdbdb;
+    border-left: initial;
+    border-right: initial;
+
+    &__boxStyle {
+      display: none !important;
+    }
+  }
+  .banner .productDetail {
+    padding: 15px 0px 0px;
+    &__info {
+      display: flex;
+
+      max-width: 992px;
+    }
+    &__card {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      border: 1px solid $border-lg;
+    }
+    &__img {
+      margin: auto;
+    }
+    &__bold {
+      font-size: 10px;
+    }
+    &__light {
+      font-size: 10px;
+    }
+    &__info--change {
+      background: $default;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .header .sidebar {
+    max-width: 248px;
+  }
+  .header .sidebar__child {
+    padding: 30px 15px;
+  }
+  // --------------search------------ //
+  .header .navbar__search {
+    height: 40px;
+  }
+  .header .navbar__form::after {
+    left: initial;
+  }
+  // cardProduct
+  .cardProduct {
+    &__sectionCard--top {
+      border-top: initial;
+    }
+    &__content {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 259px;
+        border-bottom: 1px solid $border-lg;
+      }
+    }
+  }
+  // Faqs
+  .faqs {
+    &__group {
+      flex-wrap: wrap;
+    }
+    &__card {
+      max-width: initial;
+    }
+    &__img {
+      max-width: initial;
+    }
+  }
+  // specs
+  .specs {
+    padding: 20px 0px;
+    &__info {
+      flex-direction: column;
+    }
+    &__group {
+      margin-right: initial;
+      max-width: initial;
+    }
+  }
+
+  // .priceTags
+  .priceTags {
+    padding: 20px 15px;
+    &__boxBind {
+      display: none !important;
+    }
+    &__brand {
+      max-width: 65px;
+      height: 32px;
+      padding: 4px;
+    }
+    &__star {
+      width: 14px;
+      height: 14px;
+    }
+    &__num {
+      font-size: 14px;
+    }
+    &__rateNum {
+      padding: 6px 0px 0px;
+    }
+  }
+
+  // variant
+  .variant .table th {
+    font-size: 12px;
+  }
+  .variant .table td {
+    font-size: 14px;
+  }
+  .variant .col-md-6 {
+    padding-right: initial;
+    padding-left: initial;
+  }
+  // rewiew
+  .review {
+    &__bot {
+      margin-left: 22px;
+    }
+    &__bars {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // question
+  .question {
+    &__holder {
+      padding-left: 20px;
+    }
+    &__group {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  // .warranty
+  .warranty {
+    &__detail {
+      font-size: 12px;
+    }
+    &__card {
+      padding: 20px 10px;
+    }
+  }
+
+  // footer
+  .footer {
+    &__detail {
+      font-size: 10px;
+    }
+    &__card {
+      padding: 20px 10px;
+    }
+  }
+  // subfooter
+  .sub-footer {
+    &__group {
+      flex-direction: column;
+    }
+    &__image {
+      margin: 20px 0px;
+    }
+  }
+  //
+  .mini-footer {
+    display: block;
+  }
+}
+@media (max-width: $mobile) {
+  .banner__cardheader {
+    flex-direction: column-reverse;
+  }
+  .banner__cardbox {
+    margin-bottom: 5px;
+  }
+}

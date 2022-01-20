@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+}
+.container {
+  margin: auto;
+  max-width: 72rem;
+  padding: 0 1rem;
+}
+button:focus {
+  outline: initial !important;
+}
+:focus-visible {
+  outline: initial !important;
+}
+a {
+  color: $blue;
+}

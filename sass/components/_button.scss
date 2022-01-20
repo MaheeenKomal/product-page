@@ -1,0 +1,31 @@
+%button-small {
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid $white;
+  width: 100%;
+  max-width: 98.25px;
+  padding: 5px;
+  text-align: center;
+  background: $white;
+  color: $blue;
+}
+%list-button {
+  border-radius: 4px;
+  border: 1px solid $dull-white;
+  background-color: $white;
+  color: $medium;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  padding: 0.4rem 2rem;
+  font-size: 0.9rem;
+}
+%common-button {
+  color: $dark;
+  background-color: $btn-bg;
+  border-color: $border-light;
+  font-size: 16px;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 4px;
+}

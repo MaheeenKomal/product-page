@@ -1,0 +1,25 @@
+.warranty {
+  background: $white;
+  &__info {
+    justify-content: space-around;
+  }
+  &__card {
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid $bot;
+    padding: 20px;
+    &:last-child {
+      border-right: initial;
+    }
+  }
+  &__img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  &__detail {
+    @include md-text($dark);
+    font-weight: 400;
+  }
+}

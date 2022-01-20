@@ -1,0 +1,103 @@
+.review {
+  background: $gradient;
+  &__content {
+    background: $white;
+    border-radius: 4px;
+  }
+  &__header {
+    border-bottom: 1px solid $border-lg;
+    padding: 20px 20px 6px;
+  }
+  &__box {
+    text-align: center;
+  }
+  &__img {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+  }
+  &__number {
+    font-size: 24px;
+  }
+  &__value {
+    @include md-text($dark);
+    font-weight: 400;
+  }
+  &__title {
+    @include bold-text($dark);
+  }
+  &__body {
+    padding: 20px;
+  }
+  &__imgPerson {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  &__text {
+    @include md-text($dark);
+    margin-bottom: initial;
+  }
+  &__verify {
+    @include md-text($green);
+  }
+  &__verifyimg {
+    width: 15px;
+    height: 12px;
+    object-fit: contain;
+  }
+  &__contain {
+    margin: 0px 15px;
+  }
+  &__gallery {
+    display: flex;
+  }
+  &__light {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  &__msgInfo {
+    @include md-text($medium);
+    font-weight: 400;
+  }
+  &__msg {
+    padding: 20px;
+    background: $msg;
+    margin: 12px 0px;
+    border-left: 3px solid $green;
+  }
+  &__bot {
+    padding: 15px;
+    background: $msg;
+    border-left: 3px solid $bot;
+    margin-left: 90px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      display: block;
+      position: absolute;
+      z-index: 3;
+      border: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      margin-left: -10px;
+      left: 35px;
+      border-bottom: 10px solid #f9f9f9;
+      top: -10px;
+    }
+  }
+  &__button {
+    padding: 0px 0px 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 23px;
+  }
+  &__btn {
+    @extend %common-button;
+    max-width: 135px;
+    padding: 0.5rem;
+  }
+}
